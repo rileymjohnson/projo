@@ -7,4 +7,4 @@ To install client dependencies go to the client folder and run:
     npm install
 To start the production server run:
 
-    node main.js
+    npm start
