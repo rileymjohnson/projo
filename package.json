@@ -1,0 +1,22 @@
+{
+  "name": "projo",
+  "version": "1.0.0",
+  "description": "Projector project",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rileymjohnson/projo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rileymjohnson/projo/issues"
+  },
+  "homepage": "https://github.com/rileymjohnson/projo#readme",
+  "dependencies": {
+    "opencv4nodejs": "^4.1.0"
+  }
+}
