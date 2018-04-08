@@ -1,4 +1,4 @@
-class MainLoop {
+export default class MainLoop {
 	constructor(options) {
 		this.input = options.input
 		this.output = options.output
@@ -10,26 +10,26 @@ class MainLoop {
 
 	start() {
 		this.going = true
-		this.initiateLoop()
+		this._initiateLoop()
 	}
 
-	async initiateLoop() {
-		this.loopInterval = setInterval(function() {
+	async _initiateLoop() {
+		this.loopInterval = setInterval(() => {
 			if (this.going) {
 				var frame = this.input.getFrame();
 				frame = this.loop(frame);
-				output.show(frame);
+				this.output.show(frame);
 			} else {
 				clearInterval(this.loopInterval)
 			}
-		}, 1000 / fps)
+		}, 1000 / this.fps)
 	}
 
 	stop() {
 		this.going = false
 	}
 
-	pause (seconds) {
+	pause(seconds) {
 		this.stop();
 		setTimeout(function() {
 			this.start()
