@@ -18,5 +18,3 @@ let mainLoop = new MainLoop({
 })
 
 mainLoop.start()
-
-console.log("its still going")

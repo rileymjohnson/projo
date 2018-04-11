@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/rileymjohnson/projo#readme",
   "dependencies": {
+    "numjs": "^0.15.1",
     "opencv4nodejs": "^4.1.0"
   }
 }
