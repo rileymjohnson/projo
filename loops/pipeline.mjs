@@ -1,8 +1,7 @@
 export default function(...loops) {
-	return function(frame) {
+	return function(...frames) {
 		loops.forEach((loop) => {
 			frame = loop(frame)
-			console.log("frame", frame)
 		})
 		return frame
 	}
